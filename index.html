@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="Shortcut Icon" href="logo.ico"/>
+<title>Qr Code</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="jquery-1.12.3.js"></script>
+<script type="text/javascript" src="jquery.qrcode.min.js"></script>
+<script>
+jQuery(function(){
+	
+	$("button").click(function(){
+		var	text = $("#getText").val();
+		$('#output').qrcode(text);
+
+		if (text==0) {
+			$("#output").hide();
+		} else {
+			$("#output").show();
+		}
+	});	
+
+});
+
+</script>
+</head>
+<body>
+<div class="content">
+	<p>Enter the text to get the Qr Code.</p>
+	<div class="input-item">
+		<input id="getText" type="text" placeholder="Enter the text."><button type="button">OK</button>
+	</div>
+	<div id="output"></div>
+</div>
+</body>
+</html>
