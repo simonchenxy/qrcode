@@ -9,7 +9,8 @@
 <script src="jquery-1.12.3.js"></script>
 <script type="text/javascript" src="jquery.qrcode.min.js"></script>
 <script>
-jQuery(function(){
+
+$(function(){
 	
 	$("button").click(function(){
 		var	text = $("#getText").val();
@@ -20,7 +21,7 @@ jQuery(function(){
 		} else {
 			$("#output").show();
 		}
-	});	
+	});		
 
 });
 
@@ -28,10 +29,12 @@ jQuery(function(){
 </head>
 <body>
 <div class="content">
-	<p>Enter the text to get the Qr Code.</p>
-	<div class="input-item">
-		<input id="getText" type="text" placeholder="Enter the text."><button type="button">OK</button>
-	</div>
+	<form onsubmit="return false;">
+		<p>Enter the text to get the Qr Code.</p>
+		<div class="input-item">
+			<input id="getText" type="text" placeholder="Enter the text."><button type="submit">OK</button>
+		</div>
+	</form>
 	<div id="output"></div>
 </div>
 </body>
