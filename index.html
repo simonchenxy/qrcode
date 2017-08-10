@@ -11,17 +11,14 @@
 <script>
 
 $(function(){
-	
-	$("button").click(function(){
-		var	text = $("#getText").val();
-		$('#output').qrcode(text);
 
-		if (text==0) {
-			$("#output").hide();
-		} else {
-			$("#output").show();
+	$("button").click(function(){
+		$("#output canvas").remove();
+		var	text = $("#getText").val();
+		if (text.length != 0) {
+			$('#output').qrcode(text);
 		}
-	});		
+	});
 
 });
 
