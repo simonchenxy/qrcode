@@ -11,14 +11,17 @@
 <script>
 
 $(function(){
-
-	$("button").click(function(){
+	$("#ok").click(function(){
 		$("#output canvas").remove();
 		var	text = $("#getText").val();
 		if (text.length != 0) {
 			$('#output').qrcode(text);
 		}
 	});
+	$('#reset').click(function(){
+		$("#output canvas").remove();
+		$("#getText").val('');
+	})
 
 });
 
@@ -29,7 +32,9 @@ $(function(){
 	<form onsubmit="return false;">
 		<p>Enter the numbers to get the Qr Code.</p>
 		<div class="input-item">
-			<input id="getText" type="tel" placeholder="Enter the text."><button type="submit">OK</button>
+			<input id="getText" type="tel" placeholder="Enter the text.">
+			<button id="ok" type="submit">OK</button>
+			<button id="reset" type="submit">Reset</button>
 		</div>
 	</form>
 	<div id="output"></div>
