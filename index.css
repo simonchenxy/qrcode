@@ -1,55 +1,57 @@
+html{font-size: 625%;}
 body{margin: 0;padding: 0;}
 *{box-sizing: border-box;}
 .content{
-	width: 400px;
+	width: 4rem;
 	height: auto;
 	position: absolute;
 	top: 10%;
 	left: 50%;
-	margin-left: -200px;
+	margin-left: -2rem;
 }
 p {
-    font-size: 22px;
+    font-size: 0.22rem;
+    text-align: center;
 }
 .input-item{
 	position: relative;
     text-align: center;
 }
 input{
-	width: 350px;
-    height: 50px;
-    border-radius: 4px;
-    border: 1px solid #CACACA;
-    font-size: 18px;
+	width: 3.5rem;
+    height: 0.5rem;
+    border-radius: 0.04;
+    border: 0.01rem solid #CACACA;
+    font-size: 0.18rem;
     font-weight: normal;
-    padding-left: 10px;
+    padding-left: 0.1rem;
     outline: none;
 }
 
 button{
-		width: 90px;
-		height: 42px;
-		font-size: 14px;
-		border-radius: 4px;
+		width: 0.9rem;
+		height: 0.42rem;
+		font-size: 0.14rem;
+		border-radius: 0.04rem;
 		background: none;
-		border: 1px solid #CACACA;
+		border: 0.01rem solid #CACACA;
 		outline: none;
 		vertical-align: top;
-		margin-top: 10px;
+		margin-top: 0.1rem;
 }
 #output {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0.3rem;
 }
 #output canvas {
-    padding: 10px;
-    border: 1px solid;
+    padding: 0.1rem;
+    border: 0.01rem solid;
     background: #fff;
 }
 
 @media screen and (max-width: 767px) {
     .content {
-        padding: 30px;
+        padding: 0.3rem;
         width: 100%;
         position: relative;
         top: 0;
@@ -57,20 +59,20 @@ button{
         margin: 0;
     }
     p {
-        font-size: 13pt;
+        font-size: 0.13rem;
     }
     input{
         width: 100%;
-        border-radius: 4px;
+        border-radius: 0.04rem;
     }
     button {
         width: 44%;
-				height: 42px;
-        margin-top: 20px;
+        height: 0.42rem;
+        margin-top: 0.2rem;
         background: #00C8FF;
         color: white;
-        font-size: 24px;
-        border-radius: 4px;
+        font-size: 0.24rem;
+        border-radius: 0.04rem;
         border: none;
     }
 }
