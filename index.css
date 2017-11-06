@@ -1,9 +1,13 @@
 html{font-size: 625%;}
-body{margin: 0;padding: 0;}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 0.14rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
 *{box-sizing: border-box;}
 .content{
 	width: 4rem;
-	height: auto;
 	position: absolute;
 	top: 10%;
 	left: 50%;
@@ -20,12 +24,13 @@ p {
 input{
 	width: 3.5rem;
     height: 0.5rem;
-    border-radius: 0.04;
+    border-radius: 0.04rem;
     border: 0.01rem solid #CACACA;
     font-size: 0.18rem;
     font-weight: normal;
     padding-left: 0.1rem;
     outline: none;
+    background: white;
 }
 
 button{
@@ -59,19 +64,20 @@ button{
         margin: 0;
     }
     p {
-        font-size: 0.13rem;
+        font-size: 0.18rem;
     }
     input{
         width: 100%;
+        font-size: 0.16rem;
         border-radius: 0.04rem;
     }
     button {
-        width: 44%;
-        height: 0.42rem;
+        width: 40%;
+        height: 0.40rem;
         margin-top: 0.2rem;
         background: #00C8FF;
         color: white;
-        font-size: 0.24rem;
+        font-size: 0.20rem;
         border-radius: 0.04rem;
         border: none;
     }

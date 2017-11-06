@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 <link rel="Shortcut Icon" href="logo.ico"/>
 <title>Qr Code</title>
 <link rel="stylesheet" type="text/css" href="index.css">
@@ -29,14 +29,12 @@ $(function(){
 </head>
 <body>
 <div class="content">
-	<form onsubmit="return false;">
-		<p>Enter the numbers to get the Qr Code.</p>
-		<div class="input-item">
-			<input id="getText" type="tel" placeholder="Enter the text.">
-			<button id="ok" type="submit">OK</button>
-			<button id="reset" type="submit">Reset</button>
-		</div>
-	</form>
+	<p>Enter the numbers to get the Qr Code.</p>
+	<div class="input-item">
+		<input id="getText" type="tel" placeholder="Enter the text.">
+		<button id="ok" type="submit">OK</button>
+		<button id="reset" type="submit">Reset</button>
+	</div>
 	<div id="output"></div>
 </div>
 </body>
